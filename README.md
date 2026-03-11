@@ -1,3 +1,3 @@
 # trivia
 # es un juego de trivia
-jose
+Lucas
