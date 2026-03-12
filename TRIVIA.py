@@ -22,17 +22,55 @@ Un archivo llamado `trivia.py`
 - no hace falta terminar perfecto
 - usa Git durante el proceso
 - haz varios commits pequeños"""
+
 print("····BIENVENIDO AL JUEGO DE TRIVIA····")
-nom_jug=input("Ingrese su nombre: ")
-preg_1=int(input("¿Cuantas patas tienen los perros?"))
-preg_2=int(input("¿Cuanto es 9 x 9?"))
-preg_3=input("¿Las vacas son mamiferos o oviparos?")
-preg_4=input("¿Como se llama el femenino de los caballos?")
+print("·······································")
+nom=input("Ingrese su nombre: ")
 puntaje= 0
 
-while puntaje>0:
-    puntaje =+ 1
-    if preg_1 == "4":
-        print("**Excelente**")
+preg_1=int(input("¿Cuantas patas tienen los perros? "))     
+if preg_1==4:
+        print("Respuesta correcta +1")
+        puntaje=puntaje+1
+else:
+        print("Respuesta incorrecta- 1")
+        puntaje=puntaje-1
+        
+preg_2 = int(input("¿Cuanto es 9 x 9? "))
+if preg_2== 63:
+        print("Respuesta correcta +1")
+        puntaje=puntaje+1
+else: 
+        print("Respuesta incorrecta- 1")
+        puntaje=puntaje=puntaje-1
+        
+preg_3=input("¿Las vacas son mamiferos o oviparos? ")
+if preg_3.lower()==("mamiferos"):
+        print("Respuesta correcta +1")
+        puntaje=puntaje+1
+else:
+        print("Respuesta incorrecta- 1")
+        puntaje=puntaje-1
+        
+preg_4=input("¿Como se llama el femenino de los caballos? ")
+if preg_4.lower()==("yegua"):
+        print("Respuesta correcta +1")
+        puntaje=puntaje+1
+else: 
+        print("Respuesta incorrecta- 1")
+        puntaje=puntaje=-1
+
+
+print("··············Obtuvo un puntaje de···········")
+print(puntaje)
+    
+
+if puntaje==4:
+    print("**Excelente**")
+elif puntaje>=2:
+    print("**Muy bien**")
+else:
+    print("**Puedes mejorar**")
+
         
     
